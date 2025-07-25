@@ -1,0 +1,15 @@
+# binários e objetos
+*.o
+*.out
+*.exe
+build/
+cmake-build-*
+CMakeFiles/
+CMakeCache.txt
+
+# editor
+.vscode/
+.idea/
+
+# outros
+*.log
