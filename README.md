@@ -25,7 +25,7 @@ O projeto simula a análise de arquivos criptografados (como `.psf`) usando apen
 ---
 
 ## 📁 Estrutura
-'''text 
+```text 
 cipher_permutation/
 ├── include/ # Headers: cipher.h, breaker.h, benchmark.h etc.
 ├── src/ # Códigos-fonte em C++
@@ -36,9 +36,7 @@ cipher_permutation/
 ├── entrada.txt # Texto de entrada (exemplo)
 ├── analisador # Binário compilado
 └── README.md # Este arquivo
-
-yaml
-Copiar código
+```
 
 ---
 
@@ -48,18 +46,22 @@ Copiar código
 g++ src/*.cpp -o analisador -Iinclude
 🔍 Exemplos de uso
 Benchmark com entrada direta:
-bash
+```
+```bash
 Copiar código
 ./analisador --modo benchmark --texto "ESTE É UM TEXTO TESTE" --heuristica hc --bigrams data/bigrams/pt-br.txt
-
+````
+```bash
 Benchmark com arquivo:
+````
+```bash
 bash
 Copiar código
 ./analisador --modo benchmark --arquivo entrada.txt --heuristica sa --bigrams data/bigrams/pt-br.txt
-
+````
 Saída gerada (CSV)
 csv
-Copiar código
+
 seed,tempo_ms,score,acuracia
 1754316307,69.00,0.0452,19.23
 1754316344,51.00,0.0421,7.69
@@ -73,7 +75,7 @@ seed,tempo_ms,score,acuracia
 1754316640,45.00,0.0304,7.69
 Media,55.20,0.0477,6.15
 
-
+````
 🧠 Autor
 Projeto desenvolvido por [Maria Fernanda de Oliveira Vicente], com foco em engenharia reversa, criptografia clássica e análise de desempenho heurístico.
 
