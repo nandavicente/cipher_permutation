@@ -1,0 +1,11 @@
+=== Relatório Benchmark ===
+
+Tempo médio (ms): 1.20
+Score médio: 0.0000
+Acurácia média (%): 0.00
+
+Gráficos salvos em:
+ - results/tempo_vs_acuracia.png
+ - results/score_vs_tempo.png
+ - results/score_vs_acuracia.png
+ - results/medias_benchmark.png
